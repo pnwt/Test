@@ -7,6 +7,7 @@ public class Menu : MonoBehaviour
 {
     
     public GameObject credit;
+    public GameObject howtoplay;
     public void Play()
     {
         SceneManager.LoadScene("Character");
@@ -17,18 +18,19 @@ public class Menu : MonoBehaviour
     }
     public void Credit()
     {
-        credit.SetActive(true);
+        credit.SetActive(true);       
     }
     public void Howtoplay()
     {
-
+        howtoplay.SetActive(true);
     }
     public void Exit()
     {
         Application.Quit();
     }
     public void Back()
-    {
+    { 
         credit.SetActive(false);
+        howtoplay.SetActive(false);
     }
 }
